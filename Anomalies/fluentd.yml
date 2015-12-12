@@ -1,0 +1,8 @@
+---
+
+- name: make box black without a cat
+  hosts: all
+  become: yes
+  roles:
+    - fluentd
+    - influxdb

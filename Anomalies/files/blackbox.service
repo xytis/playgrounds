@@ -1,0 +1,10 @@
+[Unit]
+Description=Hello, I may, or may not contain a cat
+After=network.target
+
+[Service]
+ExecStart=/usr/local/bin/blackbox
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
